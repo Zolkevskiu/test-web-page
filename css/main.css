@@ -12,8 +12,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
 }
-
+*::selection {
+    -webkit-tap-highlight-color: transparent;
+}
 html, head, body, #main
 {
     width: 100%;
@@ -161,12 +164,15 @@ body
 
     cursor: pointer;
 
-    background-image: url("../img/ring.gif");
+    background-image: url("../img/ring.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
-
+#button::selection {
+    background-color: none !important;
+    color: none !important;
+  }
 .button-vfx
 {
     position: absolute;
@@ -249,6 +255,13 @@ body
 
 @media screen and (max-width: 1024px)
 {
+    body,
+    html {
+        height: 100vh;
+    }
+    .second {
+        display: none;
+    }
     .b-one, .b-four, .bonus > p {
         font-size: 16px;
     }
