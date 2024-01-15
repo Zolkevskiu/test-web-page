@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <title>bot test</title>
 </head>
-<body>
-    <h1>Test page</h1>
+<body onload="loadPage();">
+    <div id="background" onload="loadPage();">
+        <center><br><br><br><br><br><br><br>
+          <button id="clickbtn" onclick="clickBtn()">Click</button><br><br><br>
+          <p id ="score">Clicks: 0</p>
+        </center>
+      </div>
+    <script>
+    var score = 0;
+
+    function clickBtn() {
+    score++;
+    console.log(score);
+    document.getElementsByTagName("p")[0].firstChild.data = "Clicks: " + score;
+    }
+
+    function loadPage() {
+    $("#background").animate({}, 800, function() {
+        $("#clickbtn").animate({height: "250px", width: "250px"}, 850, function() {
+        $("#clickbtn").animate({fontSize: "45px"}, 850, function() {
+        $("#score").animate({fontSize: "40px"}, 850, function() {
+        })
+        })
+        })
+    })
+    }
+    </script>
 </body>
 </html>
