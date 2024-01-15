@@ -173,10 +173,23 @@ body
     background-position: center;
     background-size: contain;
 }
+#button:active {
+    animation: identifier .2s ease-in-out;
+}
+@keyframes identifier {
+    from {
+        scale: 1;
+        rotate: 0;
+    }
+    to {
+        scale: 0.8;
+        rotate: 5deg;
+    }
+}
 #button::selection {
     background-color: none !important;
     color: none !important;
-  }
+}
 .button-vfx
 {
     position: absolute;
@@ -269,23 +282,19 @@ body
     left: 20px;
     z-index: 9999;
 }
-.cost-sum h2 {
-    display: none;
+.cost-sum {
     z-index: 9999;
-    position: absolute;
-    left: 20px;
-    top: 20px;
+    position: fixed;
+    left: 15px;
+    top: 15px;
 }
-.cost-sum h2:nth-child(1) {
-    display: block;
-}
+
 #counter, #factor, #background
 {
     font-size: 38px;
 
     padding-left: 10px;
 }
-
 @media screen and (max-width: 1224px)
 {
     .second

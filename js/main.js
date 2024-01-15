@@ -28,9 +28,7 @@ class Bonus
 
         let tags = '<div class="'+this.id+' bonus" href="#"> <div class="bunus-vfx"></div> <h2>'+this.name+'</h2> <p> ИМЕЕТСЯ: <span class="multiply_counter">'+this.own+'</span> </p> <p> ЦЕНА: <span class="multiply_cost">'+this.cost+'</span> </p> </div>';
         document.querySelector(".b-three").innerHTML += tags;
-        let tag_menu = `<h2>колец: ${counter}</h2>`
-        document.querySelector(".cost-sum").innerHTML += tag_menu;
-        
+
         this.element = document.querySelector("."+this.id);
 
         if (this.automate == true)
@@ -82,6 +80,7 @@ class Bonus
         document.querySelector("."+this.id+" .multiply_cost").textContent = (this.cost).toFixed(0);
         //document.querySelector("."+this.id+" .multiply_factor").textContent = (this.factor).toFixed(1);
         document.querySelector("#counter").textContent = parseInt(counter);
+        document.querySelector(".cost-sum").textContent = `колец: ${parseInt(counter)}`;
         document.querySelector("#factor").textContent = factor.toFixed(1);
         document.querySelector("#background").textContent = background.toFixed(0);
     }

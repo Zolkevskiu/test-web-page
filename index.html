@@ -27,7 +27,7 @@
     
                 <div class="second">
                     <div class="cost-sum"></div>
-                    <button class="button-close" onclick="close_menu()">close</button>
+                    <button class="button-close">close</button>
                     <div class="b-three">
                     </div>
                 </div>
@@ -37,15 +37,19 @@
         </div>
     </div>
     <script>
+        
+    </script>
+    <script>
         const btn_upgrade = document.querySelector(".upgrade-button")
         const btn_second = document.querySelector(".second")
+        const btn_close = document.querySelector(".button-close")
 
         btn_upgrade.addEventListener("click", ()=> {
             btn_second.classList.add("active-btn")
         })
-        function close_menu() {
+        btn_close.addEventListener("click", ()=> {
             btn_second.classList.remove("active-btn")
-        }
+        })
     </script>
     <script src="./js/main.js" defer> </script>
 </body>
