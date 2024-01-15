@@ -22,9 +22,6 @@ html, head, body, #main
     width: 100%;
     min-height: 100vh;
 }
-html, body {
-    overflow: hidden;
-}
 body
 {
     font-family: "Pixel Cyr", normal;
