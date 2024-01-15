@@ -1,12 +1,14 @@
 html, body, * {
     margin: 0 auto;
-    overflow: hidden;
     -webkit-tap-highlight-color: transparent;
   }
-  html, body, *::selection {
+html, body, *::selection {
     background-color: none !important;
     color: none !important;
     -webkit-tap-highlight-color: transparent;
+}
+  html, body {
+    overflow: hidden;
   }
   #background {
     padding: 0 auto;
