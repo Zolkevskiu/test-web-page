@@ -178,12 +178,10 @@ body
 }
 @keyframes identifier {
     from {
-        scale: 1;
-        rotate: 0;
+        transform:scale(1) rotate(0);
     }
     to {
-        scale: 0.8;
-        rotate: 5deg;
+        transform:scale(0.8) rotate(5deg);
     }
 }
 #button::selection {

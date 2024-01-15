@@ -2,6 +2,27 @@ let counter = (localStorage.getItem('counter')) ? parseInt(localStorage.getItem(
 let factor  = 1;
 let background = 0;
 
+
+let icounter = 0;
+const btn_test = document.querySelector('#button')
+btn_test.addEventListener('click', function(e){
+        // counter clicks
+        // if (!isNaN(parseInt(e.target.innerHTML))) {
+        //   e.target.innerHTML = parseInt(e.target.innerHTML) + 1;
+        // } else {
+        //   e.target.innerHTML = 1;
+        // }
+
+        // icounter++;
+        // if(icounter == 10) {
+        //     console.log('erro');
+            
+        // }
+        // console.log(icounter);
+
+
+  
+});
 document.querySelector('#button').addEventListener('click', function()
 {
     counter += factor;

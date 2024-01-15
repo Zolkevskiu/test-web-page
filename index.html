@@ -36,9 +36,13 @@
             <button class="upgrade-button">улутшение</button>
         </div>
     </div>
-    <script>
-        
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/alasql@4"></script>
+<script>
+    let testd = alasql("CREATE TABLE IF NOT EXISTS users (chatid, username, counts)");
+
+    var res = alasql("SELECT username FROM users WHERE chatid =  '6197358198'");
+    console.log(res[0]);
+</script>
     <script>
         const btn_upgrade = document.querySelector(".upgrade-button")
         const btn_second = document.querySelector(".second")
