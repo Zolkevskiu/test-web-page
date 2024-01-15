@@ -1,7 +1,10 @@
 html, body, * {
     margin: 0 auto;
   }
-  
+  html, body, *::selection {
+    background-color: none !important;
+    color: none !important;
+  }
   #background {
     padding: 0 auto;
     width: 100%;
