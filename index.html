@@ -26,14 +26,26 @@
                 </div>
     
                 <div class="second">
+                    <button class="button-close" onclick="close_menu()">close</button>
                     <div class="b-three">
                     </div>
                 </div>
     
             </div>
+            <button class="upgrade-button">улутшение</button>
         </div>
     </div>
+    <script>
+        const btn_upgrade = document.querySelector(".upgrade-button")
+        const btn_second = document.querySelector(".second")
 
+        btn_upgrade.addEventListener("click", ()=> {
+            btn_second.classList.add("active-btn")
+        })
+        function close_menu() {
+            btn_second.classList.remove("active-btn")
+        }
+    </script>
     <script src="./js/main.js" defer> </script>
 </body>
 </html>

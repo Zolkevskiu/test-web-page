@@ -7,9 +7,6 @@ html, body, *::selection {
     color: none !important;
     -webkit-tap-highlight-color: transparent;
 }
-  html, body {
-    overflow: hidden;
-  }
   #background {
     padding: 0 auto;
     width: 100%;
