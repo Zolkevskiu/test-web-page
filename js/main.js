@@ -28,6 +28,8 @@ class Bonus
 
         let tags = '<div class="'+this.id+' bonus" href="#"> <div class="bunus-vfx"></div> <h2>'+this.name+'</h2> <p> ИМЕЕТСЯ: <span class="multiply_counter">'+this.own+'</span> </p> <p> ЦЕНА: <span class="multiply_cost">'+this.cost+'</span> </p> </div>';
         document.querySelector(".b-three").innerHTML += tags;
+        let tag_menu = `<h2>колец: ${counter}</h2>`
+        document.querySelector(".cost-sum").innerHTML += tag_menu;
         
         this.element = document.querySelector("."+this.id);
 

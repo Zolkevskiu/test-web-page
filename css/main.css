@@ -263,6 +263,22 @@ body
     z-index: 9999;
     cursor: pointer;
 }
+.counter-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+.cost-sum h2 {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.cost-sum h2:nth-child(1) {
+    display: block;
+}
 #counter, #factor, #background
 {
     font-size: 38px;
