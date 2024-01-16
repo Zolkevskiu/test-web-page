@@ -210,6 +210,7 @@ body
     width: 100%;
     padding: 0 5%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100% 100%;
     background-image: url('../img/arb_main_menu_bg.png');
 }
