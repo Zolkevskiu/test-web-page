@@ -48,30 +48,11 @@ body
 
 #main
 {
-    animation: backgroundAnimate 60s linear infinite;
-
-    background-image: url("../img/background.png");
+    background-image: url("../img/arb_main_menu_bg.png");
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-position: 0 center;
-    background-size: auto 100%;
-
-    background-repeat-y: no-repeat;
-}
-
-@keyframes backgroundAnimate
-{
-    from
-    {
-        background-position: 0 center;
-    }
-    50%
-    {
-        background-position: 100 center;
-    }
-    to
-    {
-        background-position: 0 center;
-    }
+    background-size: 100% 100%;
 }
 
 .first
@@ -163,15 +144,21 @@ body
     top: 200px;
 
     width: 100%;
-    height: 300px;
+    height: 260px;
     margin: 100px 25px;
 
     cursor: pointer;
 
-    background-image: url("../img/ring.png");
+    background-image: url("../img/arb_main_menu_var1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+.b-two::after {
+    content: url('../img/arb_main_menu_bg-after.png');
+    z-index: -1;
+    margin-top: 30px;
+    position: absolute;
 }
 #button:active {
     animation: identifier .2s ease-in-out;
@@ -244,15 +231,18 @@ body
     border-radius: 5px;
 }
 
-.bonus > h2 {
+.bonus > h2 
+{
     margin-bottom: 10px;
     align-self: flex-start;
 }
-.bonus > p {
+.bonus > p 
+{
     font-size: 17px;
     align-self: flex-start;
 }
-.upgrade-button {
+.upgrade-button 
+{
     width: 200px;
     height: 50px;
     border-radius: 5px;
@@ -260,40 +250,37 @@ body
     cursor: pointer;
     font-size: 22px;
     outline: none;
+    margin-top: 20px;
     border: none;
     background-color: rgb(255, 76, 76);
     color: #fff;
 }
-.active-btn {
+.active-btn 
+{
     display: block;
 }
-.button-close {
+.button-close 
+{
     position: absolute;
     right: 20px;
     top: 20px;
     z-index: 9999;
     cursor: pointer;
 }
-.counter-menu {
+.counter-menu 
+{
     position: absolute;
     top: 20px;
     left: 20px;
     z-index: 9999;
 }
-.cost-sum {
+.cost-sum 
+{
     z-index: 9999;
     position: fixed;
     left: 15px;
     top: 15px;
 }
-particle {
-    position: fixed;
-    left: 0;
-    top: 0;
-    border-radius: 50%;
-    pointer-events: none;
-    opacity: 0;
-  }
 #counter, #factor, #background
 {
     font-size: 38px;
@@ -346,14 +333,16 @@ particle {
 
 @media screen and (max-width: 768px)
 {
-    .second {
+    .second 
+    {
         padding: 25px 0;
     }
 }
 
 @media screen and (max-width: 576px)
 {
-    #button {
+    #button 
+    {
         margin: 0 25px;
         margin-top: 25px;
     }
@@ -361,7 +350,8 @@ particle {
     {
         width: 100%;
     }
-    .b-one h1, .b-four h1 {
+    .b-one h1, .b-four h1 
+    {
         overflow: hidden;
     }
     .b-one h1, .b-one span, .b-four h1, .b-four span
@@ -379,10 +369,12 @@ particle {
 }
 
 @media screen and (max-width: 476px) {
-    .b-one h1 {
+    .b-one h1 
+    {
         font-size: 16px;
     }
-    .b-one span {
+    .b-one span 
+    {
         font-size: 18px;
     }
 }
